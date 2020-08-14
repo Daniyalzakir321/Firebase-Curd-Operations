@@ -1,0 +1,64 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap.min.css">
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyD85lWKbFD0DdkHa8SmzjFx5doOrECTVIw",
+    authDomain: "hotel-booking-lklmis.firebaseapp.com",
+    databaseURL: "https://hotel-booking-lklmis.firebaseio.com",
+    projectId: "hotel-booking-lklmis",
+    storageBucket: "hotel-booking-lklmis.appspot.com",
+    messagingSenderId: "563686179454",
+    appId: "1:563686179454:web:6ae6d801ecadc52f894e2f"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+<title>Data Saver</title>
+</head>
+<body>
+<br>
+<h1>Welcome To Data Saver</h1>
+<br>
+<div class="container col-md-5">
+ID:<input type="text" class="form-control" id="a">
+Name:<input type="text" class="form-control" id="b">
+Mail:<input type="text" class="form-control" id="c">
+Remarks:<input type="text" class="form-control" id="d">
+<br>
+<div > 
+    <button class="btn btn-primary" id="add" onclick="adding()">&nbsp; ADD &nbsp; </button>
+    <button class="btn btn-primary" id="search" onclick="search()">SEARCH</button>
+    <button class="btn btn-primary" id="update" onclick="update()">UPDATE</button>
+    <button class="btn btn-primary" id="del" onclick="del()">&nbsp; DEL &nbsp;</button>
+
+</div>
+</div>
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+<script src="app.js"></script>
+
+</html>
